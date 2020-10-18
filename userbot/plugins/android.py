@@ -22,7 +22,7 @@ DEVICES_DATA = (
 @borg.on(admin_cmd(pattern=r"magisk"))
 @borg.on(sudo_cmd(pattern=r"magisk", allow_sudo=True))
 async def kakashi(magisk):
-    magisk latest releases
+    """magisk latest releases"""
     releases = (
         "__**Latest Magisk Releases:**__\n\n"
         f"**Stable : **[APK v8.0.2](https://github.com/topjohnwu/Magisk/releases/download/manager-v8.0.2/MagiskManager-v8.0.2.apk) | [ZIP v20.4](https://github.com/topjohnwu/Magisk/releases/download/v20.4/Magisk-v20.4.zip) | [Uninstaller](https://github.com/topjohnwu/Magisk/releases/download/v20.4/Magisk-uninstaller-20200323.zip)\n\n"
