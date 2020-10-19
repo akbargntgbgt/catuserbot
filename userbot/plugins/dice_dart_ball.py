@@ -128,6 +128,7 @@ async def _(event):
         except BaseException:
             pass
 
+
 @bot.on(admin_cmd(pattern=f"({SPIN_E_MOJI}|spin) ([1-6])"))
 @bot.on(
     sudo_cmd(
@@ -155,6 +156,7 @@ async def _(event):
                 r = await reply_message.reply(file=InputMediaDice(emoticon=emoticon))
         except BaseException:
             pass
+
 
 CMD_HELP.update(
     {
